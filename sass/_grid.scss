@@ -1,0 +1,13 @@
+#grid>div {
+	height: 30px;
+	box-sizing: border:box;
+}
+
+$max: 12;
+
+@for $i from 1 through $max {
+	$equ: 100%/$i;
+	#grid.col-#{$1}>div{
+	width: $equ;
+	}
+}
